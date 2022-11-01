@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İş Başvurusu</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <h1>İş Başvurusu</h1>
+        <form action="">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first_name">Adınız</label>
+              <input
+                type="first_name"
+                name="first_name"
+                placeholder="Adınızı giriniz."
+                required
+              />
+            </div>
+            <div class="form_control">
+              <label for="last_name">Soyadınız</label>
+              <input
+                type="last_name"
+                name="last_name"
+                placeholder="Soyadınızı giriniz."
+                required
+              />
+            </div>
+            <div class="form_control">
+              <label for="email">Mail Adresiniz</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail adresinizi giriniz."
+                required
+              />
+            </div>
+            <div class="form_control">
+              <label for="job_role">Uzmanlık Alanınız</label>
+              <select name="job_role" id="job_role" required>
+                <option value="">Uzmanlık alanını seç.</option>
+                <option value="Python">Python</option>
+                <option value="React">React</option>
+                <option value="Flutter">Flutter</option>
+                <option value="Full_stack">Full Stack</option>
+                <option value="Front_End">Front-End</option>
+                <option value="Back_End">Back-End</option>
+              </select>
+            </div>
+            <div class="textarea_control">
+              <label for="address">Adresiniz</label>
+              <textarea
+                name="address"
+                id="address"
+                cols="50"
+                rows="4"
+                placeholder="Adresinizi giriniz."
+                required
+              ></textarea>
+            </div>
+            <div class="form_control">
+              <label for="city">Şehriniz</label>
+              <input
+                type="city"
+                name="city"
+                placeholder="Şehrinizi giriniz."
+                required
+              />
+            </div>
+            <div class="form_control">
+              <label for="date">Doğum Tarihiniz</label>
+              <input type="date" value="24-05-2022" id="date" name="date" />
+            </div>
+          </div>
+          <div class="button_container">
+            <button type="submit">Onayla</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
